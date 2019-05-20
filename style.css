@@ -1,0 +1,139 @@
+/* Austin Cultra*/
+
+/* modifies the board cells*/
+td {
+  border: 2px solid;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Times New Roman", cursive, sans-serif;
+  font-size: 125px;
+  cursor: pointer;
+}
+
+/* modifies the board*/
+table {
+  border-collapse: collapse;
+  position: absolute;
+  left: 30%;
+  top: 13%;
+}
+
+/* positions the heading in the center at the top*/
+h1 {
+  position: absolute;
+  left: 45%;
+}
+
+/* positions heading for pickpiece menu*/
+h2 {
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  font-size: 26px;
+}
+
+/* positions radio button for choosing x*/
+#pickX {
+  position: absolute;
+  left: 30%;
+  top: 34%;
+}
+
+/* positions radio button for choosing o*/
+#pickO {
+  position: absolute;
+  left: 30%;
+  top: 62%;
+}
+
+/* positions the reset button at the top left corner of the board*/
+#reset {
+  position:absolute;
+  left: 30%;
+  top: 5%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* positions start game button*/
+#start {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* stylizes and positions picksymbol menu*/
+.picksymbol {
+  width: 600px;
+  height: 300px;
+  top: 27%;
+  background-color: rgba(0, 51, 153, 1);
+  position: absolute;
+  left: 37%;
+  margin-left: -100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 32px;
+}
+
+/* stylizes and positions human victory popup*/
+.humanwin {
+  display: none;
+  width: 600px;
+  height: 500px;
+  top: 14%;
+  background-color: rgba(0, 255, 0, 0.35);
+  position: absolute;
+  left: 37%;
+  margin-left: -100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  border-radius: 5px;
+  color: black;
+  font-size: 50px;
+}
+
+/* stylizes and positions computer victory popup*/
+.computerwin {
+  display: none;
+  width: 600px;
+  height: 500px;
+  top: 14%;
+  background-color: rgba(255, 0, 0, 0.35);
+  position: absolute;
+  left: 37%;
+  margin-left: -100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  border-radius: 5px;
+  color: black;
+  font-size: 50px;
+}
+
+/* stylizes and positions tie game popup*/
+.tie {
+  display: none;
+  width: 600px;
+  height: 500px;
+  top: 14%;
+  background-color: rgb(204, 51, 255, 0.35);
+  position: absolute;
+  left: 37%;
+  margin-left: -100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  border-radius: 5px;
+  color: black;
+  font-size: 50px;
+}

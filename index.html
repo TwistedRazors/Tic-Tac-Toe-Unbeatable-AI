@@ -1,0 +1,90 @@
+<!-- Austin Cultra -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.js"></script> <!-- imports jquery library -->
+	<script type="text/javascript">
+
+  /* unchecks the radio buttons for picksymbol*/
+	$(function(){
+		$(':radio').removeAttr('checked')
+	})
+	</script>
+
+
+<title>TicTacToe</title>
+
+<link rel="stylesheet" href="style.css"> <!-- accesses css file -->
+</head>
+
+<body>
+  <h1>TicTacToe</h1>
+
+<table> <!-- creates the board-->
+  <tr> <!-- row 1 -->
+    <td class="cell" id="0"></td>
+    <td class="cell" id="1"></td>
+    <td class="cell" id="2"></td>
+  </tr>
+
+  <tr> <!-- row 2 -->
+    <td class="cell" id="3"></td>
+    <td class="cell" id="4"></td>
+    <td class="cell" id="5"></td>
+  </tr>
+
+  <tr> <!-- row 3 -->
+    <td class="cell" id="6"></td>
+    <td class="cell" id="7"></td>
+    <td class="cell" id="8"></td>
+  </tr>
+</table>
+
+<div class="picksymbol"> <!-- creates the picksymbol menu -->
+    <h2>Choose a symbol (No selection defaults to X)</h2>
+    <br>
+    <br>
+    <input id="pickX" type="radio" name="symbol" value='x' onclick="chooseSymbol(value)" checked="checked">X(goes first)<br> <!-- selects x for the human player -->
+    <br>
+    <br>
+  <input id="pickO" type="radio" name="symbol" value='o' onclick="chooseSymbol(value)" checked="checked">&nbsp&nbsp&nbsp&nbspO(goes second)<br> <!-- selects o for the human player -->
+  <br>
+  <br>
+  <button id="start" type="submit" onclick="startGame()">Start Game</button> <!-- starts the game -->
+</div>
+
+<div class="humanwin"> <!-- pops up if the human wins -->
+  <br>
+  <br>
+  <br>
+  Human wins
+  <br>
+  <br>
+</div>
+
+<div class="computerwin"> <!-- pops up if the computer wins -->
+  <br>
+  <br>
+  <br>
+  Computer wins
+  <br>
+  <br>
+</div>
+
+<div class="tie"> <!-- pops up if neither player wins -->
+  <br>
+  <br>
+  <br>
+  Tie game
+  <br>
+  <br>
+</div>
+
+</div>
+
+<button id="reset" onclick="startGame()">Restart</button> <!-- restarts the game -->
+
+</body>
+</html>
+<script src="script.js"></script> <!-- accesses javascript file -->
